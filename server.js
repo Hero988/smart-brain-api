@@ -165,8 +165,7 @@ app.put('/image', (req, res) => {
 })
 
 // we are saying here that the server is working on port 3000 and once it has been loading we do something
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     // once the app is loaded we cosole.log app is running on port 3000
-    console.log('app is running on port 3000');
+    console.log(`app is running on port ${process.env.PORT}`);
 })
-
