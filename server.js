@@ -16,11 +16,11 @@ const db = kenex.knex({
     // we need to tell it where the database lives
     connection: {
         // where the database is (this means local host)
-        host: '127.0.0.1',
+        host: 'postgresql-clean-61727',
         // our user is postgres
         user: 'postgres',
         // our database password
-        password: 'suli',
+        password: '',
         // the database name
         database: 'smart-brain'
     }
