@@ -16,15 +16,17 @@ const db = kenex.knex({
     // we need to tell it where the database lives
     connection: {
         // where the database is (this means local host)
-        host: 'postgresql-clean-61727',
-        // our user is postgres
-        user: 'postgres',
-        // our database password
-        password: '',
-        // the database name
-        database: 'smart-brain'
+        host: process.env.DATABASE_URL,
+        ssl: true,
+        // // our user is postgres
+        // user: 'postgres',
+        // // our database password
+        // password: '',
+        // // the database name
+        // database: 'smart-brain'
     }
 });
+
 
 // allows us to run express 
 const app = express()
