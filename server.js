@@ -16,7 +16,7 @@ const db = kenex.knex({
     // we need to tell it where the database lives
     connection: {
         // where the database is (this means local host)
-        host: process.env.DATABASE_URL,
+        connectionString: process.env.DATABASE_URL,
         ssl: true,
         // // our user is postgres
         // user: 'postgres',
