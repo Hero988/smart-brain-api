@@ -38,7 +38,7 @@ app.use(cors());
 // this gets the root route (localhost:3000/) and we get the request (req) and response (res)
 app.get('/', (req, res) => {
     // once we get the root route we respond (respond)(send) the database of the users
-    res.send(database.users);
+    res.send('it is working');
 })
 
 // when we get the signin route we post what is in the function and we get a requatst and a response
