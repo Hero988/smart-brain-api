@@ -123,7 +123,7 @@ app.post('/register', (req, res) => {
             .catch(trx.rollback)
     })
         // if there is an error then we convert the error and put a text saying unable to register and we do a 400 error
-        .catch(err => res.status(400).json('unable to register'))
+        .catch(err => res.status(400).json(err))
 })
 
 // we are getting the profile id (we can get the id in the req.params property by doing :id)
